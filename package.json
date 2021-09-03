@@ -4,7 +4,11 @@
   "description": "Matthew Clarke's development portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"install jest\""
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "npm run build && next export",
+    "test": "cypress open"
   },
   "author": "Matthew Clarke",
   "license": "MIT",
