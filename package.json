@@ -1,0 +1,11 @@
+{
+  "name": "dev",
+  "version": "1.0.0-beta.0",
+  "description": "Matthew Clarke's development portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"install jest\""
+  },
+  "author": "Matthew Clarke",
+  "license": "MIT"
+}
