@@ -7,5 +7,10 @@
     "test": "echo \"install jest\""
   },
   "author": "Matthew Clarke",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "next": "^11.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
 }
