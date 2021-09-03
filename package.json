@@ -9,7 +9,7 @@
     "start": "next start",
     "export": "npm run build && next export",
     "test": "cypress open",
-    "format": "npx prettier .",
+    "format": "npx prettier --write .",
     "format:check": "npx prettier --check ."
   },
   "author": "Matthew Clarke",
