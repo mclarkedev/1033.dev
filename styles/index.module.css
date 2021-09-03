@@ -1,0 +1,10 @@
+.container {
+  margin-top: 45vh; /* Optical center */
+  width: 100vw;
+}
+
+.title {
+  font-family: 'Inter';
+  font-weight: 400;
+  text-align: center;
+}

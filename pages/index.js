@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import styles from '../styles/index.module.css';
 
 export default function Home() {
   return (
@@ -10,7 +11,9 @@ export default function Home() {
         <title>Matthew develops software</title>
       </Head>
       <main>
-        <h1>Matthew develops ☼ software</h1>
+        <div className={styles.container}>
+          <h1 className={styles.title}>Matthew develops ☼ software</h1>
+        </div>
       </main>
     </>
   );
