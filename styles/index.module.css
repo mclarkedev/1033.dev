@@ -3,8 +3,24 @@
   width: 100vw;
 }
 
+/* Mobile */
 .title {
   font-family: 'Inter';
   font-weight: 400;
   text-align: center;
+  font-size: 5vw;
+}
+
+/* Tablet */
+@media (min-width: 425px) {
+  .title {
+    font-size: 4vw;
+  }
+}
+
+/* Screens above Tablet */
+@media (min-width: 768px) {
+  .title {
+    font-size: 3vw;
+  }
 }
