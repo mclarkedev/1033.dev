@@ -26,6 +26,7 @@ const renderFeaturedContent = (type: FeaturedContentType) => {
 
 const Cell = ({ post, index, colSpan }) => (
   <article
+    key={post.name}
     aria-label={post.name}
     className={`p-8 rounded-xl md:col-span-${colSpan}`}
     style={{ height: '66vh', backgroundColor: '#FAFAFA' }}

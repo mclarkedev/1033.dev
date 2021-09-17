@@ -120,7 +120,7 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           clipRule="evenodd"
           d="M216.754 27.7441C216.386 27.7829 215.863 28.3444 215.824 29.4482C215.786 30.552 216.27 31.1523 216.541 31.1523C216.812 31.1523 217.935 29.545 216.754 27.7441H216.754Z"
           fill="#235A91"
-          fill-opacity="0.556075"
+          fillOpacity="0.556075"
         />
       </g>
       <g filter="url(#filter5_f)">
@@ -191,7 +191,7 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -212,7 +212,7 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -233,7 +233,7 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -254,7 +254,7 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -275,7 +275,7 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           filterUnits="userSpaceOnUse"
           colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
