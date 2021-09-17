@@ -116,8 +116,8 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
       />
       <g filter="url(#filter4_f)">
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M216.754 27.7441C216.386 27.7829 215.863 28.3444 215.824 29.4482C215.786 30.552 216.27 31.1523 216.541 31.1523C216.812 31.1523 217.935 29.545 216.754 27.7441H216.754Z"
           fill="#235A91"
           fill-opacity="0.556075"
@@ -125,11 +125,11 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
       </g>
       <g filter="url(#filter5_f)">
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M219.397 27.3578C218.817 27.5364 218.705 28.4739 218.727 29.0096C218.75 29.5453 219.508 30.9516 220.424 30.6391C221.339 30.3266 221.495 29.1659 221.116 28.3846C220.736 27.6034 220.044 27.0453 219.397 27.3578Z"
           fill="#235A91"
-          fill-opacity="0.556075"
+          fillOpacity="0.556075"
         />
       </g>
       <path
@@ -168,9 +168,9 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           width="3.07148"
           height="80.6072"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -189,7 +189,7 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           width="3.07148"
           height="26.0695"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood flood-opacity="0" result="BackgroundImageFix" />
           <feBlend
@@ -210,7 +210,7 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           width="3.07148"
           height="50.25"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood flood-opacity="0" result="BackgroundImageFix" />
           <feBlend
@@ -231,7 +231,7 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           width="3.07148"
           height="50.25"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood flood-opacity="0" result="BackgroundImageFix" />
           <feBlend
@@ -252,7 +252,7 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           width="1.93011"
           height="3.87653"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood flood-opacity="0" result="BackgroundImageFix" />
           <feBlend
@@ -273,7 +273,7 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           width="3.05207"
           height="3.88277"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood flood-opacity="0" result="BackgroundImageFix" />
           <feBlend
@@ -295,10 +295,10 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           y2="248.128"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#CBCBCB" stop-opacity="0.27451" />
-          <stop offset="0.04" stop-color="#CBCBCB" />
-          <stop offset="0.96" stop-color="#CBCBCB" />
-          <stop offset="1" stop-color="#CBCBCB" stop-opacity="0.275701" />
+          <stop stopColor="#CBCBCB" stopOpacity="0.27451" />
+          <stop offset="0.04" stopColor="#CBCBCB" />
+          <stop offset="0.96" stopColor="#CBCBCB" />
+          <stop offset="1" stopColor="#CBCBCB" stopOpacity="0.275701" />
         </linearGradient>
         <linearGradient
           id="paint1_linear"
@@ -308,10 +308,10 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           y2="124.238"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#CBCBCB" stop-opacity="0.27451" />
-          <stop offset="0.05" stop-color="#CBCBCB" />
-          <stop offset="0.95" stop-color="#CBCBCB" />
-          <stop offset="1" stop-color="#CBCBCB" stop-opacity="0.275701" />
+          <stop stopColor="#CBCBCB" stopOpacity="0.27451" />
+          <stop offset="0.05" stopColor="#CBCBCB" />
+          <stop offset="0.95" stopColor="#CBCBCB" />
+          <stop offset="1" stopColor="#CBCBCB" stopOpacity="0.275701" />
         </linearGradient>
         <linearGradient
           id="paint2_linear"
@@ -321,10 +321,10 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           y2="200.692"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#CBCBCB" stop-opacity="0.27451" />
-          <stop offset="0.05" stop-color="#CBCBCB" />
-          <stop offset="0.95" stop-color="#CBCBCB" />
-          <stop offset="1" stop-color="#CBCBCB" stop-opacity="0.275701" />
+          <stop stopColor="#CBCBCB" stopOpacity="0.27451" />
+          <stop offset="0.05" stopColor="#CBCBCB" />
+          <stop offset="0.95" stopColor="#CBCBCB" />
+          <stop offset="1" stopColor="#CBCBCB" stopOpacity="0.275701" />
         </linearGradient>
         <linearGradient
           id="paint3_linear"
@@ -334,10 +334,10 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           y2="266.352"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#CBCBCB" stop-opacity="0.27451" />
-          <stop offset="0.05" stop-color="#CBCBCB" />
-          <stop offset="0.95" stop-color="#CBCBCB" />
-          <stop offset="1" stop-color="#CBCBCB" stop-opacity="0.275701" />
+          <stop stopColor="#CBCBCB" stopOpacity="0.27451" />
+          <stop offset="0.05" stopColor="#CBCBCB" />
+          <stop offset="0.95" stopColor="#CBCBCB" />
+          <stop offset="1" stopColor="#CBCBCB" stopOpacity="0.275701" />
         </linearGradient>
         <linearGradient
           id="paint4_linear"
@@ -347,9 +347,9 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           y2="361.123"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#404040" />
-          <stop offset="0.6" stop-color="#838383" />
-          <stop offset="1" stop-color="#A7A7A7" />
+          <stop stopColor="#404040" />
+          <stop offset="0.6" stopColor="#838383" />
+          <stop offset="1" stopColor="#A7A7A7" />
         </linearGradient>
         <linearGradient
           id="paint5_linear"
@@ -359,9 +359,9 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           y2="361.123"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#404040" />
-          <stop offset="0.6" stop-color="#838383" />
-          <stop offset="1" stop-color="#A7A7A7" />
+          <stop stopColor="#404040" />
+          <stop offset="0.6" stopColor="#838383" />
+          <stop offset="1" stopColor="#A7A7A7" />
         </linearGradient>
         <linearGradient
           id="paint6_linear"
@@ -371,10 +371,10 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           y2="22.2012"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#4F4F4F" stop-opacity="0.130841" />
-          <stop offset="0.07" stop-color="#4F4F4F" />
-          <stop offset="0.937" stop-color="#4F4F4F" stop-opacity="0.953271" />
-          <stop offset="1" stop-color="#4F4F4F" stop-opacity="0" />
+          <stop stopColor="#4F4F4F" stopOpacity="0.130841" />
+          <stop offset="0.07" stopColor="#4F4F4F" />
+          <stop offset="0.937" stopColor="#4F4F4F" stopOpacity="0.953271" />
+          <stop offset="1" stopColor="#4F4F4F" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint7_linear"
@@ -384,10 +384,10 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           y2="699.541"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#4F4F4F" stop-opacity="0.130841" />
-          <stop offset="0.07" stop-color="#4F4F4F" />
-          <stop offset="0.937" stop-color="#4F4F4F" stop-opacity="0.953271" />
-          <stop offset="1" stop-color="#4F4F4F" stop-opacity="0" />
+          <stop stopColor="#4F4F4F" stopOpacity="0.130841" />
+          <stop offset="0.07" stopColor="#4F4F4F" />
+          <stop offset="0.937" stopColor="#4F4F4F" stopOpacity="0.953271" />
+          <stop offset="1" stopColor="#4F4F4F" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint8_linear"
@@ -397,14 +397,10 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           y2="920.095"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#404040" />
-          <stop offset="0.0219315" stop-color="#464646" />
-          <stop
-            offset="0.99949"
-            stop-color="#525252"
-            stop-opacity="0.0156863"
-          />
-          <stop offset="1" stop-color="#444444" stop-opacity="0" />
+          <stop stopColor="#404040" />
+          <stop offset="0.0219315" stopColor="#464646" />
+          <stop offset="0.99949" stopColor="#525252" stopOpacity="0.0156863" />
+          <stop offset="1" stopColor="#444444" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint9_linear"
@@ -414,14 +410,10 @@ export default function IPhoneX({ width = 360, height = 722 }: IPhoneXProps) {
           y2="920.095"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#404040" />
-          <stop offset="0.0219315" stop-color="#464646" />
-          <stop
-            offset="0.99949"
-            stop-color="#525252"
-            stop-opacity="0.0156863"
-          />
-          <stop offset="1" stop-color="#444444" stop-opacity="0" />
+          <stop stopColor="#404040" />
+          <stop offset="0.0219315" stopColor="#464646" />
+          <stop offset="0.99949" stopColor="#525252" stopOpacity="0.0156863" />
+          <stop offset="1" stopColor="#444444" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>

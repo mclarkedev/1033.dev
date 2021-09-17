@@ -2,12 +2,11 @@ import Head from 'next/head';
 import React from 'react';
 import Grid from '../components/Grid';
 
-import { attributes, react as IndexContent } from '../content/index.md';
+import { attributes } from '../content/index.md';
 import styles from '../styles/index.module.css';
 
 export default function Home() {
   const { title, posts } = attributes;
-  // if (!posts) return null;
   return (
     <>
       <Head>
