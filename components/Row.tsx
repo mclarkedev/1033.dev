@@ -1,5 +1,5 @@
 import React from 'react';
-import IPhoneX from './iPhoneX';
+import IPhoneX from './IPhoneX';
 import TimeMachine from './TimeMachine';
 
 enum FeaturedContentType {
