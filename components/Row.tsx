@@ -24,15 +24,19 @@ const renderFeaturedContent = (type: FeaturedContentType) => {
   }
 };
 
-const Cell = ({ post, index, colSpan }) => (
+const Cell = ({ post, index, colSpan, theme }) => (
   <article
     key={post.name}
     aria-label={post.name}
-    className={`p-8 rounded-xl md:col-span-${colSpan}`}
-    style={{ height: '66vh', backgroundColor: '#FAFAFA' }}
+    className={`p-8 rounded-xl md:col-span-${colSpan} ${
+      theme === 'terminal'
+        ? 'bg-gray-900 text-white font-mono text-xs'
+        : 'bg-gray-100 text-black'
+    }`}
+    style={{ height: '66vh' }}
   >
     <h2 className="font-mono text-xs font-semibold">{post.name}</h2>
-    <figure className="flex flex-col items-center">
+    <figure className="flex flex-col">
       {renderFeaturedContent(index)}
       <figcaption>{post.name}</figcaption>
     </figure>
@@ -46,11 +50,12 @@ export default function Row({ data, index }) {
 
   return (
     <div className="grid gap-12 mt-12 md:grid-cols-7 grid-cols-1 grid-rows-1">
-      {data?.map((post: Post, subIindex: number) => (
+      {data?.map((post: Post, subIndex: number) => (
         <Cell
           post={post}
-          index={subIindex}
-          colSpan={subIindex === 0 ? dynamicColSpan1 : dynamicColSpan2}
+          index={subIndex}
+          colSpan={subIndex === 0 ? dynamicColSpan1 : dynamicColSpan2}
+          theme={subIndex === 1 ? 'terminal' : null}
         />
       ))}
     </div>
