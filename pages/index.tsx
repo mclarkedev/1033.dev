@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>Matthew develops software</title>
       </Head>
-      <header className="bg-white p-8 pb-4 w-screen fixed z-50">
+      <header className="bg-white p-4 pl-8 pt-5 w-screen fixed z-50">
         <h1 className={styles.title}>{title}</h1>
       </header>
       <main className={styles.mainContainer}>
