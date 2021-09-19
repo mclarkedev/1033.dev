@@ -5,6 +5,7 @@ import TimeMachine from './TimeMachine';
 enum FeaturedContentType {
   arthur = 0,
   timeMachine = 1,
+  notionDraw = 2,
 }
 
 interface Post {
@@ -19,12 +20,23 @@ const renderFeaturedContent = (type: FeaturedContentType) => {
       return <IPhoneXWithGif />;
     case FeaturedContentType.timeMachine:
       return <TimeMachine height="33vh" />;
+    case FeaturedContentType.notionDraw:
+      return (
+        <div style={{ height: '55vh' }}>
+          <embed
+            src="https://www.notiondraw.com"
+            height="100%"
+            width="100%"
+            className="rounded-xl"
+          />
+        </div>
+      );
     default:
       return null;
   }
 };
 
-const Cell = ({ post, index, colSpan, theme }) => (
+const Cell = ({ post, colSpan, theme }) => (
   <article
     key={post.name}
     aria-label={post.name}
@@ -39,7 +51,7 @@ const Cell = ({ post, index, colSpan, theme }) => (
       <figcaption>
         <h2 className="font-mono text-xs font-semibold">{post.name}</h2>
       </figcaption>
-      {renderFeaturedContent(index)}
+      {renderFeaturedContent(post.id)}
     </figure>
   </article>
 );
@@ -56,7 +68,7 @@ export default function Row({ data, index }) {
           post={post}
           index={subIndex}
           colSpan={subIndex === 0 ? dynamicColSpan1 : dynamicColSpan2}
-          theme={subIndex === 1 ? 'terminal' : null}
+          theme={post.id === 1 ? 'terminal' : null}
         />
       ))}
     </div>
