@@ -66,7 +66,6 @@ export default function Row({ data, index }) {
       {data?.map((post: Post, subIndex: number) => (
         <Cell
           post={post}
-          index={subIndex}
           colSpan={subIndex === 0 ? dynamicColSpan1 : dynamicColSpan2}
           theme={post.id === 1 ? 'terminal' : null}
         />
