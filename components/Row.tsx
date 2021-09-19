@@ -1,5 +1,5 @@
 import React from 'react';
-import IPhoneX from './IPhoneX';
+import { IPhoneXWithGif } from './IPhoneX';
 import TimeMachine from './TimeMachine';
 
 enum FeaturedContentType {
@@ -16,11 +16,11 @@ interface Post {
 const renderFeaturedContent = (type: FeaturedContentType) => {
   switch (type) {
     case FeaturedContentType.arthur:
-      return <IPhoneX height="55vh" />;
+      return <IPhoneXWithGif />;
     case FeaturedContentType.timeMachine:
       return <TimeMachine height="33vh" />;
     default:
-      break;
+      return null;
   }
 };
 
@@ -35,10 +35,11 @@ const Cell = ({ post, index, colSpan, theme }) => (
     }`}
     style={{ height: '66vh' }}
   >
-    <h2 className="font-mono text-xs font-semibold">{post.name}</h2>
     <figure className="flex flex-col">
+      <figcaption>
+        <h2 className="font-mono text-xs font-semibold">{post.name}</h2>
+      </figcaption>
       {renderFeaturedContent(index)}
-      <figcaption>{post.name}</figcaption>
     </figure>
   </article>
 );
