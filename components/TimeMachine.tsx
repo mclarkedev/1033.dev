@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import fuzzysearch from 'fuzzysearch';
 
 interface TimeMachineProps {
   width?: number | string;
@@ -60,6 +61,7 @@ export default function TimeMachine({
 }: TimeMachineProps) {
   const [deploys, setDeploys] = useState(undefined);
   const [error, setError] = useState(undefined);
+
   useEffect(() => {
     const site_id = 'c9d95c92-716c-4b0b-b468-94f7892589c1';
     const url = `https://api.netlify.com/api/v1/sites/${site_id}/deploys`;
@@ -85,21 +87,52 @@ export default function TimeMachine({
       {error && (
         <p className="text-red-700">{JSON.stringify(error, null, 2)}</p>
       )}
-      {deploys?.map((deploy: Deploy) => (
-        <div key={deploy.id} className="group relative cursor-pointer">
-          <p>{deploy.title}</p>
-          <div
-            style={{ right: 700 }}
-            className="text-black opacity-0 group-hover:opacity-100 absolute w-1/2 "
-          >
-            <img
-              className="rounded-xl shadow-2xl absolute"
-              src={deploy.screenshot_url}
-              height="100"
-            />
+      {deploys?.map((deploy: Deploy, index) => {
+        const isChore = deploy?.title
+          ? fuzzysearch('chore:', deploy?.title)
+          : false;
+
+        const isFeat = deploy?.title
+          ? fuzzysearch('feat:', deploy?.title)
+          : false;
+
+        const isFix = deploy?.title
+          ? fuzzysearch('fix:', deploy?.title)
+          : false;
+
+        const makeColor = () => {
+          if (isChore) {
+            return 'gray';
+          }
+          if (isFeat) {
+            return 'limegreen';
+          }
+          if (isFix) {
+            return 'lightblue';
+          }
+        };
+        return (
+          <div key={deploy.id} className="group relative cursor-pointer">
+            <p>
+              <span style={{ color: makeColor() }}>{deploy.title}</span>
+            </p>
+            <div
+              style={{ right: 700 }}
+              className="text-black opacity-0 group-hover:opacity-100 absolute w-1/2 "
+            >
+              <img
+                className="rounded-xl shadow-2xl absolute"
+                src={
+                  deploy?.screenshot_url
+                    ? deploy?.screenshot_url
+                    : deploys[index + 1]?.screenshot_url
+                }
+                height="100"
+              />
+            </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </pre>
   );
 }
